@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	scroll-behavior: smooth;
+}
+
+.header {
+	background-image: url('../images/mobile/image-hero.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+.hero-title {
+	font-size: 2.5rem;
+	line-height: 2.5rem;
+}
+
+.hovered-link::after {
+	opacity: 0;
+	content: '';
+	position: absolute;
+	bottom: 2px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 1rem;
+	height: 2px;
+	background-color: white;
+	transition: opacity 0.2s ease-in-out;
+}
+
+.hovered-link:hover::after {
+	opacity: 1;
+}
+
+@media (min-width: 767px) {
+	.header {
+		background-image: url('../images/desktop/image-hero.jpg');
+	}
+}

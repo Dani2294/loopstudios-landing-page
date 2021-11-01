@@ -1,0 +1,26 @@
+{
+	"name": "loopstudios-landing-page-main",
+	"version": "1.0.0",
+	"description": "![Design preview for the Loopstudios landing page coding challenge](./design/desktop-preview.jpg)",
+	"main": "index.js",
+	"scripts": {
+		"dev": "vite"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Dani2294/loopstudios-landing-page.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Dani2294/loopstudios-landing-page/issues"
+	},
+	"homepage": "https://github.com/Dani2294/loopstudios-landing-page#readme",
+	"devDependencies": {
+		"autoprefixer": "^10.4.0",
+		"postcss": "^8.3.11",
+		"tailwindcss": "^2.2.19",
+		"vite": "^2.6.13"
+	}
+}

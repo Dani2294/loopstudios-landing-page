@@ -1,59 +1,711 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Loopstudios landing page</title>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  About
-  Careers
-  Events
-  Products
-  Support
+		<title>Frontend Mentor | Loopstudios landing page</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./css/styles.css" />
 
-  Immersive experiences that deliver
+		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+		<style>
+			.attribution {
+				font-size: 11px;
+				text-align: center;
+			}
+			.attribution a {
+				color: hsl(228, 45%, 44%);
+			}
+		</style>
+	</head>
+	<body>
+		<header class="header relative h-[700px]">
+			<div class="max-w-7xl mx-auto px-5">
+				<nav class="flex justify-between py-10">
+					<!-- Logo -->
+					<div class="logo flex justify-center items-center">
+						<a href="./index.html">
+							<img class="h-6 sm:h-8" src="./images/logo.svg" alt="logo" />
+						</a>
+					</div>
 
-  The leader in interactive VR
+					<!-- Desktop menu -->
+					<div
+						class="desktop-menu hidden md:flex space-x-8 text-white font-alata"
+					>
+						<a href="#" class="hovered-link relative">About</a>
+						<a href="#" class="hovered-link relative">Careers</a>
+						<a href="#" class="hovered-link relative">Events</a>
+						<a href="#" class="hovered-link relative">Products</a>
+						<a href="#" class="hovered-link relative">Support</a>
+					</div>
 
-  Founded in 2011, Loopstudios has been producing world-class virtual reality 
-  projects for some of the best companies around the globe. Our award-winning 
-  creations have transformed businesses through digital experiences that bind 
-  to their brand.
+					<!-- Mobile Toggler -->
+					<div
+						class="mobile-toggler flex items-center cursor-pointer md:hidden"
+					>
+						<button>
+							<img
+								class="h-5"
+								src="./images/icon-hamburger.svg"
+								alt="mobile hamburger menu"
+							/>
+						</button>
+					</div>
+					<!-- Mobile menu -->
+					<div
+						class="
+							mobile-menu
+							hidden
+							py-10
+							px-5
+							absolute
+							inset-0
+							h-full
+							w-full
+							bg-black
+							text-white
+							z-10
+						"
+					>
+						<div class="flex justify-between">
+							<div class="logo flex justify-center items-center">
+								<a href="./index.html">
+									<img class="h-6 sm:h-8" src="./images/logo.svg" alt="logo" />
+								</a>
+							</div>
+							<div
+								class="
+									close-btn
+									flex
+									justify-center
+									items-center
+									cursor-pointer
+								"
+							>
+								<button>
+									<img
+										class="h-5"
+										src="./images/icon-close.svg"
+										alt="mobile hamburger menu"
+									/>
+								</button>
+							</div>
+						</div>
 
-  Our creations
+						<div
+							class="
+								flex flex-col
+								space-y-4
+								my-36
+								text-2xl
+								uppercase
+								font-josefin
+							"
+						>
+							<a href="#" class="">About</a>
+							<a href="#" class="">Careers</a>
+							<a href="#" class="">Events</a>
+							<a href="#" class="">Products</a>
+							<a href="#" class="">Support</a>
+						</div>
+					</div>
+				</nav>
 
-  See all
+				<div class="hero-title my-32 max-w-lg md:my-28">
+					<h1
+						class="
+							text-white
+							sm:text-6xl
+							font-josefin
+							uppercase
+							border-2 border-white
+							p-7
+						"
+					>
+						Immersive experiences that deliver
+					</h1>
+				</div>
+			</div>
+		</header>
 
-  Deep earth
-  Night arcade
-  Soccer team VR
-  The grid
-  From up above VR
-  Pocket borealis
-  The curiosity
-  Make it fisheye
+		<main class="bg-white max-w-7xl mx-auto px-5">
+			<!-- WHO WE ARE SECTION -->
+			<section class="my-24 lg:my-40 relative lg:flex">
+				<div>
+					<img
+						class="w-full lg:hidden"
+						src="./images/mobile/image-interactive.jpg"
+						alt="man playing with a vr casque"
+					/>
+					<img
+						class="w-full hidden lg:block"
+						src="./images/desktop/image-interactive.jpg"
+						alt="man playing with a vr casque"
+					/>
+				</div>
+				<div
+					class="
+						pt-12
+						pb-7
+						px-5
+						bg-white
+						text-center
+						md:text-left
+						space-y-5
+						lg:absolute
+						right-0
+						-bottom-0.5
+						lg:w-1/2 lg:pb-0 lg:px-0 lg:pl-20 lg:pt-24
+					"
+				>
+					<h2 class="text-3xl lg:text-5xl font-josefin uppercase">
+						The leader in interactive VR
+					</h2>
+					<p
+						class="
+							text-dark-gray
+							font-alata
+							leading-7
+							md:max-w-2xl
+							lg:max-w-none
+						"
+					>
+						Founded in 2011, Loopstudios has been producing world-class virtual
+						reality projects for some of the best companies around the globe.
+						Our award-winning creations have transformed businesses through
+						digital experiences that bind to their brand.
+					</p>
+				</div>
+			</section>
 
-  About
-  Careers
-  Events
-  Products
-  Support
+			<!-- OUR CREATIONS SECTION -->
+			<section class="mb-24 lg:my-38">
+				<div
+					class="
+						lg:flex
+						justify-between
+						items-center
+						text-center
+						mb-10
+						lg:mb-16
+					"
+				>
+					<h2 class="text-3xl lg:text-5xl font-josefin uppercase">
+						Our creations
+					</h2>
+					<button
+						class="
+							hidden
+							lg:inline-block
+							text-md
+							lg:text-xl
+							font-josefin
+							uppercase
+							border border-black
+							px-8
+							py-2
+							tracking-widest
+							hover:bg-black hover:text-white
+							transition
+						"
+					>
+						See all
+					</button>
+				</div>
 
-  © 2021 Loopstudios. All rights reserved.
+				<!-- grid gallery -->
+				<div class="grid lg:grid-cols-4 lg:grid-rows-2 gap-4">
+					<div class="img-box relative cursor-pointer group">
+						<img
+							class="
+								w-full
+								lg:hidden
+								group-hover:opacity-40
+								transition
+								duration-100
+							"
+							src="./images/mobile/image-deep-earth.jpg"
+							alt="earth from space"
+						/>
+						<img
+							class="
+								w-full
+								hidden
+								lg:block
+								group-hover:opacity-40
+								transition
+								duration-100
+							"
+							src="./images/desktop/image-deep-earth.jpg"
+							alt="earth from space"
+						/>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+						<span
+							class="
+								font-josefin
+								uppercase
+								text-xl text-white
+								absolute
+								bottom-0
+								left-0
+								pl-4
+								pb-5
+								bg-gradient-to-b
+								from-transparent
+								to-gray-800
+								w-full
+								group-hover:text-black group-hover:bg-none
+							"
+							>Deep <br />earth</span
+						>
+					</div>
+
+					<div class="img-box relative cursor-pointer group">
+						<img
+							class="
+								w-full
+								lg:hidden
+								group-hover:opacity-40
+								transition
+								duration-100
+							"
+							src="./images/mobile/image-night-arcade.jpg"
+							alt="nigth arcade game"
+						/>
+						<img
+							class="
+								w-full
+								hidden
+								lg:block
+								group-hover:opacity-40
+								transition
+								duration-100
+							"
+							src="./images/desktop/image-night-arcade.jpg"
+							alt="night arcade game"
+						/>
+
+						<span
+							class="
+								font-josefin
+								uppercase
+								text-xl text-white
+								absolute
+								bottom-0
+								left-0
+								pl-4
+								pb-5
+								bg-gradient-to-b
+								from-transparent
+								to-gray-800
+								w-full
+								group-hover:text-black group-hover:bg-none
+							"
+							>Night <br />arcade</span
+						>
+					</div>
+
+					<div class="img-box relative cursor-pointer group">
+						<img
+							class="
+								w-full
+								lg:hidden
+								group-hover:opacity-40
+								transition
+								duration-100
+							"
+							src="./images/mobile/image-soccer-team.jpg"
+							alt="football player running on the field"
+						/>
+						<img
+							class="
+								w-full
+								hidden
+								lg:block
+								group-hover:opacity-40
+								transition
+								duration-100
+							"
+							src="./images/desktop/image-soccer-team.jpg"
+							alt="football player running on the field"
+						/>
+
+						<span
+							class="
+								font-josefin
+								uppercase
+								text-xl text-white
+								absolute
+								bottom-0
+								left-0
+								pl-4
+								pb-5
+								bg-gradient-to-b
+								from-transparent
+								to-gray-800
+								w-full
+								group-hover:text-black group-hover:bg-none
+							"
+							>Soccer <br />team vr</span
+						>
+					</div>
+
+					<div class="img-box relative cursor-pointer group">
+						<img
+							class="
+								w-full
+								lg:hidden
+								group-hover:opacity-40
+								transition
+								duration-100
+							"
+							src="./images/mobile/image-grid.jpg"
+							alt="close up of a car on a race grid"
+						/>
+						<img
+							class="
+								w-full
+								hidden
+								lg:block
+								group-hover:opacity-40
+								transition
+								duration-100
+							"
+							src="./images/desktop/image-grid.jpg"
+							alt="close up of a car on a race grid"
+						/>
+
+						<span
+							class="
+								font-josefin
+								uppercase
+								text-xl text-white
+								absolute
+								bottom-0
+								left-0
+								pl-4
+								pb-5
+								bg-gradient-to-b
+								from-transparent
+								to-gray-800
+								w-full
+								group-hover:text-black group-hover:bg-none
+							"
+							>The <br />grid</span
+						>
+					</div>
+
+					<div class="img-box relative cursor-pointer group">
+						<img
+							class="
+								w-full
+								lg:hidden
+								group-hover:opacity-40
+								transition
+								duration-100
+							"
+							src="./images/mobile/image-from-above.jpg"
+							alt="a road from above"
+						/>
+						<img
+							class="
+								w-full
+								hidden
+								lg:block
+								group-hover:opacity-40
+								transition
+								duration-100
+							"
+							src="./images/desktop/image-from-above.jpg"
+							alt="a road from above"
+						/>
+
+						<span
+							class="
+								font-josefin
+								uppercase
+								text-xl text-white
+								absolute
+								bottom-0
+								left-0
+								pl-4
+								pb-5
+								bg-gradient-to-b
+								from-transparent
+								to-gray-800
+								w-full
+								group-hover:text-black group-hover:bg-none
+							"
+							>From up <br />above vr</span
+						>
+					</div>
+
+					<div class="img-box relative cursor-pointer group">
+						<img
+							class="
+								w-full
+								lg:hidden
+								group-hover:opacity-40
+								transition
+								duration-100
+							"
+							src="./images/mobile/image-pocket-borealis.jpg"
+							alt="night stunning pocket borealis"
+						/>
+						<img
+							class="
+								w-full
+								hidden
+								lg:block
+								group-hover:opacity-40
+								transition
+								duration-100
+							"
+							src="./images/desktop/image-pocket-borealis.jpg"
+							alt="night stunning pocket borealis"
+						/>
+
+						<span
+							class="
+								font-josefin
+								uppercase
+								text-xl text-white
+								absolute
+								bottom-0
+								left-0
+								pl-4
+								pb-5
+								bg-gradient-to-b
+								from-transparent
+								to-gray-800
+								w-full
+								group-hover:text-black group-hover:bg-none
+							"
+							>Pocket <br />borealis</span
+						>
+					</div>
+
+					<div class="img-box relative cursor-pointer group">
+						<img
+							class="
+								w-full
+								lg:hidden
+								group-hover:opacity-40
+								transition
+								duration-100
+							"
+							src="./images/mobile/image-curiosity.jpg"
+							alt="curiosity rover on mars"
+						/>
+						<img
+							class="
+								w-full
+								hidden
+								lg:block
+								group-hover:opacity-40
+								transition
+								duration-100
+							"
+							src="./images/desktop/image-curiosity.jpg"
+							alt="curiosity rover on mars"
+						/>
+
+						<span
+							class="
+								font-josefin
+								uppercase
+								text-xl text-white
+								absolute
+								bottom-0
+								left-0
+								pl-4
+								pb-5
+								bg-gradient-to-b
+								from-transparent
+								to-gray-800
+								w-full
+								group-hover:text-black group-hover:bg-none
+							"
+							>The <br />curiosity</span
+						>
+					</div>
+
+					<div class="img-box relative cursor-pointer group">
+						<img
+							class="
+								w-full
+								lg:hidden
+								group-hover:opacity-40
+								transition
+								duration-100
+							"
+							src="./images/mobile/image-fisheye.jpg"
+							alt="fisheye of a city and sky"
+						/>
+						<img
+							class="
+								w-full
+								hidden
+								lg:block
+								group-hover:opacity-40
+								transition
+								duration-100
+							"
+							src="./images/desktop/image-fisheye.jpg"
+							alt="fisheye of a city and sky"
+						/>
+
+						<span
+							class="
+								font-josefin
+								uppercase
+								text-xl text-white
+								absolute
+								bottom-0
+								left-0
+								pl-4
+								pb-5
+								bg-gradient-to-b
+								from-transparent
+								to-gray-800
+								w-full
+								group-hover:text-black group-hover:bg-none
+							"
+							>Make it <br />fisheye</span
+						>
+					</div>
+				</div>
+
+				<div class="text-center mt-8 lg:hidden">
+					<button
+						class="
+							text-md
+							lg:text-xl
+							font-josefin
+							uppercase
+							border border-black
+							px-10
+							py-3
+							tracking-widest
+							hover:bg-black hover:text-white
+							transition
+						"
+					>
+						See all
+					</button>
+				</div>
+			</section>
+		</main>
+
+		<footer class="bg-black">
+			<div
+				class="
+					max-w-7xl
+					mx-auto
+					px-5
+					py-12
+					lg:py-7 lg:flex
+					justify-between
+					items-center
+				"
+			>
+				<div class="flex flex-col items-center lg:items-start">
+					<a class="block" href="./index.html">
+						<img class="h-6 lg:h-4" src="./images/logo.svg" alt="logo" />
+					</a>
+					<div
+						class="
+							flex flex-col
+							items-center
+							space-y-4
+							my-9
+							lg:my-3 lg:flex-row lg:space-x-5 lg:space-y-0
+							text-white text-xs
+							font-alata
+						"
+					>
+						<a href="#" class="hovered-link relative py-3">About</a>
+						<a href="#" class="hovered-link relative py-3">Careers</a>
+						<a href="#" class="hovered-link relative py-3">Events</a>
+						<a href="#" class="hovered-link relative py-3">Products</a>
+						<a href="#" class="hovered-link relative py-3">Support</a>
+					</div>
+				</div>
+
+				<div class="space-y-4">
+					<!-- socials -->
+					<div
+						class="flex justify-center items-center space-x-4 lg:justify-end"
+					>
+						<a class="hovered-link relative py-2" href="#"
+							><img
+								class="h-5 lg:h-4"
+								src="./images/icon-facebook.svg"
+								alt="facebook icon"
+						/></a>
+						<a class="hovered-link relative py-2" href="#"
+							><img
+								class="h-5 lg:h-4"
+								src="./images/icon-twitter.svg"
+								alt="twitter icon"
+						/></a>
+						<a class="hovered-link relative py-2" href="#"
+							><img
+								class="h-5 lg:h-4"
+								src="./images/icon-pinterest.svg"
+								alt="pinterest icon"
+						/></a>
+						<a class="hovered-link relative py-2" href="#"
+							><img
+								class="h-5 lg:h-4"
+								src="./images/icon-instagram.svg"
+								alt="instagram icon"
+						/></a>
+					</div>
+					<p
+						class="
+							text-very-dark-gray
+							font-alata
+							text-center text-sm
+							lg:text-xs
+						"
+					>
+						© 2021 Loopstudios. All rights reserved.
+					</p>
+				</div>
+			</div>
+		</footer>
+
+		<!-- About Careers Events Products Support Immersive experiences that deliver The
+		leader in interactive VR Founded in 2011, Loopstudios has been producing
+		world-class virtual reality projects for some of the best companies around
+		the globe. Our award-winning creations have transformed businesses through
+		digital experiences that bind to their brand. Our creations See all Deep
+		earth Night arcade Soccer team VR The grid From up above VR Pocket borealis
+		The curiosity Make it fisheye About Careers Events Products Support © 2021
+		Loopstudios. All rights reserved. -->
+
+		<!-- <div class="attribution">
+			Challenge by
+			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+				>Frontend Mentor</a
+			>. Coded by <a href="#">Your Name Here</a>.
+		</div> -->
+		<script src="./script.js"></script>
+	</body>
 </html>
